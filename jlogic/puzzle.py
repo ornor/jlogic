@@ -1,5 +1,8 @@
 from typing import Any, Callable
 
+__ALL__ = ['Field', 'Restriction', 'Group', 'Puzzle',
+           'RectangleField', 'RectanglePuzzle']
+
 
 class Base(object):
 

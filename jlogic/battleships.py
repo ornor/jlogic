@@ -1,5 +1,7 @@
 import re
-from jlogic import RectanglePuzzle, RectangleField
+from jlogic.puzzle import RectanglePuzzle, RectangleField
+
+__ALL__ = ['Battleships']
 
 
 class Battleships(RectanglePuzzle):

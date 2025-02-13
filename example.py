@@ -1,4 +1,4 @@
-from Battleships import Battleships
+from jlogic.battleships import Battleships
 
 
 bs = Battleships("""
