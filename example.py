@@ -17,4 +17,5 @@ bs = Battleships("""
 
 print()
 print(bs.row_values)
+
 print(bs.row_solution)
