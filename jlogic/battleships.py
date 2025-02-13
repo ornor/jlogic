@@ -1,5 +1,5 @@
 import re
-from jlogic.puzzle import RectanglePuzzle, RectangleField, Group
+from jlogic.puzzle import RectanglePuzzle, RectangleField, Field, Group
 
 __ALL__ = ['Battleships']
 
@@ -89,7 +89,7 @@ class Battleships(RectanglePuzzle):
                 sum_hit = sum([1 for f in fields if f.value == self.VALUE_HIT])
                 return sum_hit == self.row_index_W[i_row]
 
-            restrictions = [sum_hit]
+            restrictions = [check_sum_hit]
             self.add_group(Group(fields, restrictions))
 
         # add column groups TODO
